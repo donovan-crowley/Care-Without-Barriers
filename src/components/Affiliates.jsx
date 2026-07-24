@@ -1,9 +1,11 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import IBN from '../assets/ibn-sina-clinic.png';
+import WCMA from '../assets/wcma.png';
 
 export default function Affiliates() {
     const partners = [
-        { name: "Ibn Sina Clinic", logo: "/ibn-sina-clinic.png" },
-        { name: "WCMA", logo: "/wcma.png" }
+        { name: "Ibn Sina Clinic", logo: IBN },
+        { name: "WCMA", logo: WCMA }
     ];
 
     return (

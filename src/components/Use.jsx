@@ -1,4 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import CMP from '../assets/CMP.png'
+import CBC from '../assets/CBC.png'
+import Lipid from '../assets/Lipid.png'
 
 export default function Use() {
     return (
@@ -22,7 +25,7 @@ export default function Use() {
                                 className="position-absolute top-0 start-50 translate-middle-x rounded-circle border border-4 border-white shadow-sm overflow-hidden bg-white" 
                                 style={{ width: '120px', height: '120px', zIndex: 2, borderColor: 'var(--accent) !important' }}
                             >
-                                <img src="/CBC.png" alt="CBC Blood Tests" className="w-100 h-100 object-fit-cover" />
+                                <img src={CBC} alt="CBC Blood Tests" className="w-100 h-100 object-fit-cover" />
                             </div>
                             <div className="bg-white p-4 pt-5 rounded-4 shadow-sm border text-center d-flex flex-column h-100" style={{ marginTop: '50px' }}>
                                 <h4 className="fw-bold mb-3 pt-3" style={{ color: 'var(--accent)', fontSize: '1.25rem' }}>
@@ -45,7 +48,7 @@ export default function Use() {
                                 className="position-absolute top-0 start-50 translate-middle-x rounded-circle border border-4 border-white shadow-sm overflow-hidden bg-white" 
                                 style={{ width: '120px', height: '120px', zIndex: 2, borderColor: 'var(--accent) !important' }}
                             >
-                                <img src="/Lipid.png" alt="Lipid Panel" className="w-100 h-100 object-fit-cover" />
+                                <img src={Lipid} alt="Lipid Panel" className="w-100 h-100 object-fit-cover" />
                             </div>
                             <div className="bg-white p-4 pt-5 rounded-4 shadow-sm border text-center d-flex flex-column h-100" style={{ marginTop: '50px' }}>
                                 <h4 className="fw-bold mb-3 pt-3" style={{ color: 'var(--accent)', fontSize: '1.25rem' }}>
@@ -66,7 +69,7 @@ export default function Use() {
                                 className="position-absolute top-0 start-50 translate-middle-x rounded-circle border border-4 border-white shadow-sm overflow-hidden bg-white" 
                                 style={{ width: '120px', height: '120px', zIndex: 2, borderColor: 'var(--accent) !important' }}
                             >
-                                <img src="/CMP.png" alt="CMP Metabolic Panel" className="w-100 h-100 object-fit-cover" />
+                                <img src={CMP} alt="CMP Metabolic Panel" className="w-100 h-100 object-fit-cover" />
                             </div>
                             <div className="bg-white p-4 pt-5 rounded-4 shadow-sm border text-center d-flex flex-column h-100" style={{ marginTop: '50px' }}>
                                 <h4 className="fw-bold mb-3 pt-3" style={{ color: 'var(--accent)', fontSize: '1.25rem' }}>

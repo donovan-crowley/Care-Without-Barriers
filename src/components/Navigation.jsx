@@ -1,5 +1,6 @@
 import { Container, Navbar, Nav, Button } from 'react-bootstrap';
 import { useNavigate, useLocation } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 export default function Navigation () {
     const navigate = useNavigate();
@@ -41,7 +42,7 @@ export default function Navigation () {
                         className="border-0 bg-transparent p-0" 
                     >
                         <img 
-                            src="/logo.png" 
+                            src={logo}
                             alt="Care Without Barriers"
                             style={{ height: '100px', width:'auto' }}
                         />
