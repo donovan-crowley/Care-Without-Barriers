@@ -1,4 +1,9 @@
 import Hero from './Hero';
+import About from './About';
+import Use from './Use';
+import Events from './Events'
+import Affiliates from './Affiliates'
+import Contact from './Contact'
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -21,6 +26,11 @@ export default function Home() {
     return(
         <>
             <Hero />
+            <About />
+            <Use />
+            <Events />
+            <Affiliates />
+            <Contact />
         </>
     );
 }

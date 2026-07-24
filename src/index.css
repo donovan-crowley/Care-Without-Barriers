@@ -1,7 +1,7 @@
 :root {
   --text: #ffffff;
-  --text-h: #ffffff;
-  --bg: #000000;
+  --text-h: #000000;
+  --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #0d6efd;
@@ -34,10 +34,10 @@
   :root {
     --text: #ffffff;
     --text-h: #ffffff;
-    --bg: #000000;
+    --bg: #fff;
     --border: #2e303a;
     --code-bg: #1f2028;
-    --accent: #00f2ff;
+    --accent: #0d6efd;
     --accent-bg: rgba(192, 132, 252, 0.15);
     --accent-border: rgba(192, 132, 252, 0.5);
     --social-bg: rgba(47, 48, 58, 0.5);
@@ -61,15 +61,12 @@ html, body {
 }
 
 #root {
-  width: 100% !important;
-  max-width: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  text-align: left;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 h1,

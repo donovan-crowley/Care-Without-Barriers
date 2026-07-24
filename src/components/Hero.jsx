@@ -2,11 +2,48 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Hero() {
     return (
-        <div className="min-vh-100 bg-black text-light d-flex align-items-center">
-            <Container>
-                <Row className="align-items-center">
-            
-                    <p>Helllo world</p>
+        <div 
+            className="d-flex pt-5 align-items-stretch position-relative text-white"
+            style={{
+                backgroundImage: `url('./CareWithoutBenefitsStock.png')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                minHeight: '85vh',
+            }}
+        >
+            {/* Dark overlay for contrast */}
+            <div 
+                className="position-absolute top-0 start-0 w-100 h-100" 
+                style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
+            ></div>
+
+            {/* Container forces the box to stretch from top (just below navbar) to bottom */}
+            <Container className="position-relative z-index-1 d-flex align-items-center py-5 mt-4">
+                <Row className="w-100">
+                    <Col md={8} lg={6}>
+                        <div 
+                            className="p-5 shadow-lg rounded-end-4"
+                            style={{ 
+                                /* Use rgba with your accent color or solid hex with alpha 
+                                   so the text won't inherit the transparency */
+                                backgroundColor: 'rgba(13, 110, 253, 0.7)', 
+                                backdropFilter: 'blur(10px)',
+                                color: '#ffffff',
+                                fontFamily: "'Inter', sans-serif",
+                                minHeight: '20vh', // Extends the shape vertically
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'center'
+                            }}
+                        >
+                            <h1 className="fw-bold mb-3 text-light" style={{ fontSize: '2.5rem' }}>
+                                Welcome to Care Without Barriers!
+                            </h1>
+                            <p className="fs-5 mb-0">
+                                Providing free screenings and care to uninsured and underserved individuals.
+                            </p>
+                        </div>
+                    </Col>
                 </Row>
             </Container>
         </div>
