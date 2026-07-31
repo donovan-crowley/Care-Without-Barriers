@@ -1,23 +1,8 @@
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { useState } from 'react';
+import { useForm } from '@formspree/react';
 
 export default function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
-    const [submitted, setSubmitted] = useState(false);
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission logic here (or via Formspree)
-        setSubmitted(true);
-    };
+    const [state, handleSubmit] = useForm("xbdneear");
 
     return (
         <div id="contact" className="py-5 bg-light text-black">
@@ -66,7 +51,7 @@ export default function Contact() {
                                 </p>
                             </div>
 
-                            {submitted ? (
+                            {state.succeeded ? (
                                 <div className="alert alert-success border-0 rounded-3 text-center py-4">
                                     <strong>Thank you!</strong> Your message has been sent successfully.
                                 </div>
@@ -78,8 +63,6 @@ export default function Contact() {
                                             type="text" 
                                             name="name"
                                             placeholder="Enter your name" 
-                                            value={formData.name}
-                                            onChange={handleChange}
                                             required
                                             className="py-2 rounded-3"
                                         />
@@ -91,8 +74,6 @@ export default function Contact() {
                                             type="email" 
                                             name="email"
                                             placeholder="Enter your email" 
-                                            value={formData.email}
-                                            onChange={handleChange}
                                             required
                                             className="py-2 rounded-3"
                                         />
@@ -105,8 +86,6 @@ export default function Contact() {
                                             rows={4}
                                             name="message"
                                             placeholder="Type your message here..." 
-                                            value={formData.message}
-                                            onChange={handleChange}
                                             required
                                             className="rounded-3"
                                         />
@@ -115,9 +94,9 @@ export default function Contact() {
                                     <Button 
                                         type="submit" 
                                         className="w-100 py-3 fw-bold border-0 shadow-sm"
-                                        style={{ backgroundColor: 'var(--accent)', color: '#000000' }}
+                                        style={{ backgroundColor: 'var(--accent)', color: '#ffffff' }}
                                     >
-                                        Send Message
+                                        {state.submitting ? 'Sending' : 'Send Message'}
                                     </Button>
                                 </Form>
                             )}
