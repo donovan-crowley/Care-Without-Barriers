@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://donovan-crowley.github.io/Care-Without-Barriers",
+  "homepage": "https://carewithoutbarriers.care",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
