@@ -13,7 +13,7 @@ export default function Contact() {
                             Contact Us
                         </h1>
                         <p className="text-secondary fs-5">
-                            You can reach us at 404-503-2236 or carewithoutbarriers@gmail.com
+                            You can reach us at 440-503-2236 or carewithoutbarriers@gmail.com
                         </p>
                     </Col>
                 </Row>
