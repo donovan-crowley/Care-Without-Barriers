@@ -34,7 +34,7 @@ function Home() {
             <About />
             <Use />
             <Events />
-            {/*<Affiliates />*/}
+            <Affiliates />
             <Contact />
         </>
     );
