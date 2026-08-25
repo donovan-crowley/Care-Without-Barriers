@@ -5,10 +5,12 @@ export default function Hero() {
         <div 
             className="d-flex pt-5 align-items-stretch position-relative text-white"
             style={{
-                backgroundImage: `url('./CareWithoutBenefitsStock.png')`,
-                backgroundSize: 'cover',
+                backgroundImage: `url('./CWBbackground.png')`,
+                backgroundSize: '100% 100%',
                 backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
                 minHeight: '85vh',
+                width: '100%'
             }}
         >
             {/* Dark overlay for contrast */}

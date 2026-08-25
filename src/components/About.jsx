@@ -10,7 +10,7 @@ export default function About() {
                             Who We Are
                         </h1>
                         <p className="text-muted fs-6 pb-3">
-                            Established in Jan. 2026
+                            Established in Jan. 2026 | Based in Cleveland, Ohio
                         </p>
                         <p className="lead text-muted fs-4">
                             Care Without Barriers is a health initiative providing free complete blood count tests, lipid panels, and comprehensive metabolic panel screenings to uninsured and underserved individuals.

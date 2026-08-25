@@ -35,8 +35,12 @@ export default function Footer() {
                 <Row className="justify-content-center">
                     <Col xs={12} className="text-center">
                         <p className="font-monospace text-light b-0" style={{ fontSize: '0.75rem' }}>
-                            Copyright © Care Without Barriers {new Date().getFullYear()}
+                            Copyright © Care Without Barriers {new Date().getFullYear()}.
                         </p>
+                        <p className="font-monospace text-light b-0" style={{ fontSize: '0.75rem' }}>
+                            Website developed by Donovan Crowley.
+                        </p>
+                        
                     </Col>
                 </Row>
             </Container>

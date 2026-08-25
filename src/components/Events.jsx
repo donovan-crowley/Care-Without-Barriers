@@ -14,7 +14,7 @@ export default function Events() {
                             Events
                         </h1>
                         <p className="text-secondary mb-4">
-                            Raised $1640+ for first screening on March 7th, 2026
+                            Raised $3,000+ for first two screenings, providing care to 40+ people
                         </p>
                     </Col>
                 </Row>
