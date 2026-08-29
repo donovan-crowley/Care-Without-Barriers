@@ -26,3 +26,9 @@ This project uses npm scripts to manage the build and deployment process.
 To run the project locally during development:
 ```bash
 npm run dev
+```
+
+To push through Github pages to domain
+```bash
+npm install gh-pages --save-dev 
+```
